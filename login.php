@@ -11,10 +11,6 @@ $pass_unsafe=md5($_POST['password']);
 $user = mysqli_real_escape_string($con,$user_unsafe);
 $pass = mysqli_real_escape_string($con,$pass_unsafe);
 
-/*$pass=md5($pass1);
-$salt="a1Bz20ydqelm8m1wql";
-$pass=$salt.$pass;*/
-
 $query=mysqli_query($con,"SELECT * from admin where username='$user' and password='$pass'")or die(mysqli_error($con));
 	$row=mysqli_fetch_array($query);
            
@@ -51,9 +47,6 @@ $query=mysqli_query($con,"SELECT * from admin where username='$user' and passwor
 					// arahkan yang bukan admin ke halaman khusus asprak
 				}
 		  
-	 
-	
-		// echo "<script type='text/javascript'>document.location='pages/home.php'</script>";
 	  }
 }	 
 ?>
