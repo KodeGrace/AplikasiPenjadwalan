@@ -10,3 +10,5 @@ This app for scheduling in Computer Laboratory.
 - PHP
 - JavaScript
 - MySQL
+
+Nb. Not complete code - Private save
